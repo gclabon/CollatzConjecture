@@ -5,7 +5,7 @@
 //  If n is even, divide it by 2. If n is odd, multiply it by 3 and add 1.
 int main()
 {
-    int stepstaken, startNum, currNum = 0;
+    int stepsTaken, startNum, currNum = 0;
 
     printf("Enter the start Number: \n");
     scanf(" %d", &startNum);
@@ -14,12 +14,12 @@ int main()
     while (currNum != 1){
         if(currNum % 2 == 0){
             currNum = currNum / 2;
-            stepstaken ++;
+            stepsTaken ++;
         } else {
             currNum = (currNum * 3) + 1;
-            stepstaken ++;
+            stepsTaken ++;
         }
     }
-    printf("Steps taken in the Collatz Conjecture starting with %d is: %d", startNum, stepstaken);
+    printf("Steps taken in the Collatz Conjecture starting with %d is: %d", startNum, stepsTaken);
     return 0;
 }
